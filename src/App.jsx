@@ -8,7 +8,7 @@ import Cart from './components/Cart';
 import SideBar from './components/SideBar';
 
 const slides = [
-  '../src/images/image-product-1.jpg',
+  '../src/assets/image-product-1.jpg',
   '../src/images/image-product-2.jpg',
   '../src/images/image-product-3.jpg',
   '../src/images/image-product-4.jpg',
