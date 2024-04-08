@@ -5,10 +5,9 @@ import './App.css';
 import ImageCarousel from './components/ImageCarousel';
 import Main from './components/Main';
 import Cart from './components/Cart';
-import SideBar from './components/SideBar';
 
 const slides = [
-  '../src/assets/image-product-1.jpg',
+  '/assets/image-product-1.jpg',
   '../src/images/image-product-2.jpg',
   '../src/images/image-product-3.jpg',
   '../src/images/image-product-4.jpg',
