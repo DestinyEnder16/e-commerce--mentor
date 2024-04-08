@@ -51,7 +51,7 @@ function NavBar({ totalItem }) {
 
           <span>
             <img
-              src="../../src/images/image-avatar.png"
+              src="https://i.postimg.cc/yWP3yR8Y/image-avatar.png"
               alt="User profile"
               className="size-[25px]"
             />
