@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import image1 from '../images/image-product-1.jpg';
 
 function BasketState({ totalItem }) {
   const [isActive, setIsActive] = useState(false);
@@ -30,7 +31,7 @@ function BasketState({ totalItem }) {
             >
               <div>
                 <img
-                  src="../src/images/image-product-1.jpg"
+                  src={image1}
                   alt="Product 1"
                   className=" size-20 rounded-md"
                 />

@@ -11,7 +11,7 @@ function SideBar({ handleSideToggle }) {
 
   return (
     <aside
-      className={`px-10 py-10 bg-white absolute left-0 top-0 z-50 h-full ${isActive ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-500 ease-in flex flex-col gap-20`}
+      className={`px-10 py-10 bg-white  fixed  left-0 top-0 z-50 h-full ${isActive ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-500 ease-in flex flex-col gap-20`}
       style={{ width: '60vw' }}
     >
       <div className="cursor-pointer">
