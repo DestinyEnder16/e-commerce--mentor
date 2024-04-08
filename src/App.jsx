@@ -10,7 +10,7 @@ import ImageCarousel from './components/ImageCarousel';
 import Main from './components/Main';
 import Cart from './components/Cart';
 
-const slides = [image1, image2, image3, image4, image5];
+const slides = [image1, image2, image3, image4];
 
 function App() {
   const [totalItem, setTotalItem] = useState(0);
