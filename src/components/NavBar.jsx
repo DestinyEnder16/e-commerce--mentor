@@ -12,9 +12,6 @@ function NavBar({ totalItem }) {
 
   const handleSideToggle = function () {
     setShowNav((prev) => !prev);
-    setTimeout(() => {
-      console.log('BYE');
-    }, 1000);
   };
 
   return (
@@ -54,7 +51,7 @@ function NavBar({ totalItem }) {
 
           <span>
             <img
-              src="../src/images/image-avatar.png"
+              src="../images/image-avatar.png"
               alt="User profile"
               className="size-[25px]"
             />
