@@ -42,7 +42,7 @@ function BasketState({ totalItem, setTotalItem }) {
                 </p>
               </div>
 
-              <span className="cursor-pointer">
+              <span className="cursor-pointer ml-3">
                 <svg
                   width="14"
                   height="16"
