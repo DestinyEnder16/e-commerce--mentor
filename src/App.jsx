@@ -16,7 +16,7 @@ function App() {
   const [totalItem, setTotalItem] = useState(0);
   return (
     <Fragment>
-      <NavBar totalItem={totalItem} />
+      <NavBar totalItem={totalItem} setTotalItem={setTotalItem} />
       <div className="">
         <ImageCarousel slides={slides} />
       </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import image1 from '../images/image-product-1.jpg';
 
-function BasketState({ totalItem }) {
+function BasketState({ totalItem, setTotalItem }) {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function BasketState({ totalItem }) {
 
   return (
     <div
-      className={`shadow shadow-xl w-[97%]  absolute bg-white rounded-xl left-2.5 -bottom-[480%] flex flex-col justify-between min-h-full transition-all ${isActive ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none invisible '} duration-700`}
+      className={`shadow shadow-xl w-[95%]  absolute bg-white rounded-xl left-[1rem] -bottom-[480%] flex flex-col justify-between min-h-full transition-all ${isActive ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none invisible '} duration-700`}
     >
       <div className="py-9 pl-10 border-b-2">
         <h1 className="text-3xl font-bold text-[#1D2025]">Cart</h1>
@@ -25,19 +25,16 @@ function BasketState({ totalItem }) {
           </p>
         ) : (
           <div className="w-full left-8 grid grid-rows-2 gap-7">
-            <div
-              className="grid grid-cols-3"
-              style={{ gridTemplateColumns: '4fr 80% 1fr' }}
-            >
+            <div className="flex gap-5">
               <div>
                 <img
                   src={image1}
                   alt="Product 1"
-                  className=" size-20 rounded-md"
+                  className=" w-[6rem] h-20 rounded-md"
                 />
               </div>
 
-              <div className="text-2xl grid grid-rows-2 gap-2 text-[#B6BCC8] justify-left">
+              <div className="text-2xl grid grid-rows-2 gap-2 text-[#B6BCC8] justify-left ml-5">
                 <p className="text-[1.5rem]">Fall Limited Edition Sneakers</p>
                 <p>
                   $125.00 x {totalItem}
@@ -51,6 +48,7 @@ function BasketState({ totalItem }) {
                   height="16"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
+                  onClick={() => setTotalItem(0)}
                 >
                   <defs>
                     <path
@@ -63,7 +61,7 @@ function BasketState({ totalItem }) {
               </span>
             </div>
 
-            <button className="bg-[#FF7E1B] w-full rounded-3xl text-2xl font-bold text-white">
+            <button className="bg-[#FF7E1B] w-full h-min py-6 rounded-3xl text-2xl font-bold text-white sm">
               Checkout
             </button>
           </div>

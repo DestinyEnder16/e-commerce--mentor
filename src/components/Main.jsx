@@ -3,7 +3,7 @@ import Cart from './Cart';
 function Main({ children }) {
   // Collections Men Women About Contact
   return (
-    <div className="px-[4rem] mt-8">
+    <div className="px-[3rem] mt-8">
       <h1
         className="font-bold uppercase mb-7 tracking-widest text-2xl"
         style={{ color: 'hsl(26, 100%, 55%)' }}

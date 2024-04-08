@@ -2,7 +2,7 @@ import { useState } from 'react';
 import BasketState from './BasketState';
 import SideBar from './SideBar';
 
-function NavBar({ totalItem }) {
+function NavBar({ totalItem, setTotalItem }) {
   const [showBasket, setShowBasket] = useState(false);
   const [showNav, setShowNav] = useState(false);
 
@@ -58,7 +58,11 @@ function NavBar({ totalItem }) {
           </span>
         </div>
 
-        {showBasket ? <BasketState totalItem={totalItem} /> : ''}
+        {showBasket ? (
+          <BasketState totalItem={totalItem} setTotalItem={setTotalItem} />
+        ) : (
+          ''
+        )}
       </nav>
 
       {showNav ? <SideBar handleSideToggle={handleSideToggle} /> : ''}
